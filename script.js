@@ -66,15 +66,14 @@ let savingsAccount = {
     },
     printAccountSummary: function printAccountSummary(){
 
-        console.log (
-        `Welcome! \nYour balance is currently 
-        $${savingsAccount.balance},
-        and your interest rate is 
-        ${savingsAccount.interestRatePercent}%`
+        return (
+        `Welcome! \nYour balance is currently $${savingsAccount.balance},
+and your interest rate is ${savingsAccount.interestRatePercent}%`
         )
 
 },
 };
 
-//console.log(savingsAccount.printAccountSummary());
-document.write(savingsAccount.printAccountSummary);
+console.log(savingsAccount.printAccountSummary());
+
+//document.write(savingsAccount.printAccountSummary);
